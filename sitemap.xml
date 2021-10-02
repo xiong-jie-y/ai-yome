@@ -3,5 +3,9 @@
      <loc>https://xiong-jie-y.github.io/robo-yome/3d_reconstruction/01_survey_3d_reconstruction/</loc>
      <lastmod>2021-10-02</lastmod>
      <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://xiong-jie-y.github.io/robo-yome/dataset/01_instance_segmentation_annotation/</loc>
+     <lastmod>2021-10-02</lastmod>
+     <changefreq>daily</changefreq>
     </url>
 </urlset>
