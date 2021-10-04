@@ -4,7 +4,7 @@ nav:
   - Blogging:
       - 3D Reconstruction:
         - 3d_reconstruction/01_survey_3d_reconstruction.md
-      - Dataset Construction:
+      - ML Dataset Construction:
         - dataset/01_why_annotation.md
         - dataset/02_instance_segmentation_annotation.md
   - Profile: 

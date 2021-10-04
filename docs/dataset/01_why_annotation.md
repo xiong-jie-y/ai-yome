@@ -1,4 +1,4 @@
-# What dataset construction article?
+# why dataset construction article?
 The dataset construction is important to train a good ML model. 
 
 Both the quality and the quantity is really important for the dataset.
@@ -11,3 +11,9 @@ To increase the number of the annotated data, it will take time linearly increas
 If the number of the data is increased, the quality control of the annotation will take more time. So both achieving quality and the quantity costs a lot.
 
 Thus if your responsibility is getting a good model, it is worth taking time to learn how to construct an dataset efficiently and with a good quality for various tasks. For this purpose I wrote an article about dataset construction for each task from research and industries.
+
+In my articles, I will try to focus on methods that meet one of these conditions
+
+* the ones that can enable something that can be done without the method
+* the ones that can let us construct dataset 2-100 times more efficient
+* the ones that can be used widespread in many tasks (e.g. not a UI improvement for a specific tasks)
