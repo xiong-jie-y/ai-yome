@@ -1,11 +1,12 @@
-site_name: Dreaming about robot wife
-site_url: https://xiong-jie-y.github.io/robo-yome/
+site_name: Dreaming about ai waifu
+site_url: https://xiong-jie-y.github.io/ai-yome/
 nav:
   - Blogging:
       - 3D Reconstruction:
         - 3d_reconstruction/01_survey_3d_reconstruction.md
-      - Dataset:
-        - dataset/01_instance_segmentation_annotation.md
+      - Dataset Construction:
+        - dataset/01_why_annotation.md
+        - dataset/02_instance_segmentation_annotation.md
   - Profile: 
       - my_profile.md
 theme:
@@ -21,10 +22,10 @@ extra:
       link: https://github.com/xiong-jie-y
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/_xiongjie_
-  disqus: robo-yome
+  disqus: ai-yome
   manifest: manifest.webmanifest
 google_analytics:
-  - G-MXP088YF0G
+  - G-NCHRHCQMVK
   - auto
 markdown_extensions:
   - footnotes

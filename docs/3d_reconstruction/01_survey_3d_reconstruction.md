@@ -1,5 +1,5 @@
-# The brief survey of the 3D video reconstruction for looking glass
-In this article, I will explain overview of the methods to create 3D Videos for looking glass.
+# The brief survey of the 3D video reconstruction for Looking Glass
+In this article, I will explain overview of the methods to create 3D Videos for Looking Glass.
 This article is for the people who want to create apps to create 3D Videos and not for app users.
 The target video is any kind of video, for a video where multiple people is moving as a foreground and foreground is fixed, the method I implemented in [remimi](https://github.com/xiong-jie-y/remimi) can be used. I will explain the method in another article.
 
@@ -7,9 +7,9 @@ Firstly I will explain video format we want to output, and secondly the methods 
 
 ## 3D Video Format we adopt
 Before explaining video format, I explain apps available.
-There are some apps for looking glass.
+There are some apps for Looking Glass.
 
-To play 3D Videos on looking glass, you can use [HoloPlay](https://docs.lookingglassfactory.com/3d-viewers/holoplay-studio) Studio. 
+To play 3D Videos on Looking Glass, you can use [HoloPlay](https://docs.lookingglassfactory.com/3d-viewers/holoplay-studio) Studio. 
 
 The supported video formats are
 

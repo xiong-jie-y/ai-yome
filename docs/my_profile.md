@@ -1,7 +1,7 @@
 # Profile
 I'm a software engineer and sometimes machine learning engineer.
 
-Some of my projects can be the basis for robot wife achievement.
+Some of my projects can be the basis for ai wife achievement.
 
 Twitter account is [here](https://twitter.com/_xiongjie_).
 
