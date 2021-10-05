@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://xiong-jie-y.github.io/ai-yome/dataset/03_dataset_construction_by_reconstruction/">
+        <link rel="canonical" href="https://xiong-jie-y.github.io/ai-yome/misc/01_contribution_to_cvat/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
     
     
       
-        <title>Reconstruction based dataset construction - Dreaming about ai waifu</title>
+        <title>How I added an interactive segmentation feature to CVAT. - Dreaming about ai waifu</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#reconstruction-based-dataset-construction" class="md-skip">
+        <a href="#how-i-added-an-interactive-segmentation-feature-to-cvat" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Reconstruction based dataset construction
+              How I added an interactive segmentation feature to CVAT.
             
           </span>
         </div>
@@ -173,6 +173,8 @@
         
   
   
+    
+  
 
 
   
@@ -184,7 +186,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../3d_reconstruction/01_survey_3d_reconstruction/" class="md-tabs__link">
+      <a href="../../3d_reconstruction/01_survey_3d_reconstruction/" class="md-tabs__link md-tabs__link--active">
         Blogging
       </a>
     </li>
@@ -247,12 +249,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
       
       
       
@@ -348,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01_why_annotation/" class="md-nav__link">
+      <a href="../../dataset/01_why_annotation/" class="md-nav__link">
         why dataset construction article?
       </a>
     </li>
@@ -362,8 +366,139 @@
   
   
     <li class="md-nav__item">
-      <a href="../02_instance_segmentation_annotation/" class="md-nav__link">
+      <a href="../../dataset/02_instance_segmentation_annotation/" class="md-nav__link">
         How I annotated 300 images with instance segmentation mask
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_3" type="checkbox" id="__nav_1_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_3">
+          Misc
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Misc" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_3">
+          <span class="md-nav__icon md-icon"></span>
+          Misc
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How I added an interactive segmentation feature to CVAT.
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        How I added an interactive segmentation feature to CVAT.
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-how-i-implemented" class="md-nav__link">
+    What &amp; How I implemented
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#read-contribution-guideline" class="md-nav__link">
+    Read contribution guideline
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clean-code-update-documentation" class="md-nav__link">
+    Clean code &amp; Update documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respond-to-comments-and-fix-it" class="md-nav__link">
+    Respond to comments and fix it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#takeaway" class="md-nav__link">
+    Takeaway
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_nuclio_memo/" class="md-nav__link">
+        Strange error while deploying serverless functions to nuclio so many times
       </a>
     </li>
   
@@ -450,6 +585,49 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-how-i-implemented" class="md-nav__link">
+    What &amp; How I implemented
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#read-contribution-guideline" class="md-nav__link">
+    Read contribution guideline
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clean-code-update-documentation" class="md-nav__link">
+    Clean code &amp; Update documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respond-to-comments-and-fix-it" class="md-nav__link">
+    Respond to comments and fix it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#takeaway" class="md-nav__link">
+    Takeaway
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -461,7 +639,36 @@
               
                 
                 
-                <h1 id="reconstruction-based-dataset-construction">Reconstruction based dataset construction<a class="headerlink" href="#reconstruction-based-dataset-construction" title="Permanent link">&para;</a></h1>
+                <h1 id="how-i-added-an-interactive-segmentation-feature-to-cvat">How I added an interactive segmentation feature to CVAT.<a class="headerlink" href="#how-i-added-an-interactive-segmentation-feature-to-cvat" title="Permanent link">&para;</a></h1>
+<p>In this article, I will explain how it's easy to add a semi &amp; auto annotation feature to CVAT. </p>
+<p>When the function is merged to CVAT, I felt joy because the function might be used by many users. So I really recommend contributing to OSS if you haven't. </p>
+<p><a href="https://github.com/openvinotoolkit/cvat">CVAT</a> is a well developed annotation tool for computer vision tasks. 
+One of the interesting features of CVAT is semi annotation &amp; auto annotation feature. 
+I wanted to use one of the interactive segmentation feature, which helps with annotating instance segmentation, but the features in the CVAT was not enough for my task. So I implemented a new interactive segmentation feature.</p>
+<p>The screenshot below is the screenshot of using the new feature. The polygon with black line and painted with white half transparent is the estimated segmentation with new semi annotation.</p>
+<p><img alt="" src="../01/Screenshot%20from%202021-10-06%2000-07-12.png" /></p>
+<p>The following is the note the way I merge the new feature to CVAT.</p>
+<h2 id="what-how-i-implemented">What &amp; How I implemented<a class="headerlink" href="#what-how-i-implemented" title="Permanent link">&para;</a></h2>
+<p>I already confirmed the basic functionality of CVAT and tried the annotation a bit. I tried an interactive segmentation following <a href="https://openvinotoolkit.github.io/cvat/docs/administration/advanced/installation_automatic_annotation/">this procedure</a>.
+I will recommend using them if you haven't used CVAT and want to contribute to them.</p>
+<p>The semi &amp; automatic annotation is implemented as a server less function and what I need to add is just a serverless function and cvat will add the serverless function automatically to UI.</p>
+<p>By checking nuclio (serverless function management tool) document, and some config file, I guessed that what I need to write is mostly writing docker file for the container. So I read some config files and serverless function scripts under <a href="https://github.com/openvinotoolkit/cvat/tree/develop/serverless">this directory</a> and environment construction procedure of <a href="https://github.com/saic-vul/ritm_interactive_segmentation">new interactive segmentation model</a> and just wrote the new config files and serverless function script.</p>
+<p>The actual PR is <a href="https://github.com/openvinotoolkit/cvat/pull/3740">here</a>.</p>
+<h2 id="read-contribution-guideline">Read contribution guideline<a class="headerlink" href="#read-contribution-guideline" title="Permanent link">&para;</a></h2>
+<p>There's a contribution guide for contributors.
+Usually the repository has a code style guideline for each language in the repository,
+but there seems not for yaml and python maybe because the code line is not so many.
+So I just see other code and followed their implicit code style.</p>
+<h2 id="clean-code-update-documentation">Clean code &amp; Update documentation<a class="headerlink" href="#clean-code-update-documentation" title="Permanent link">&para;</a></h2>
+<p>I cleaned code and yaml, just rename container name, serverless function name, conform the style to other code, 
+update README, tutorial, and CHANGELOG.</p>
+<p>That's it.</p>
+<h2 id="respond-to-comments-and-fix-it">Respond to comments and fix it<a class="headerlink" href="#respond-to-comments-and-fix-it" title="Permanent link">&para;</a></h2>
+<p>I didn't get a code fix request and I got a gratitude and code has merged.</p>
+<h2 id="takeaway">Takeaway<a class="headerlink" href="#takeaway" title="Permanent link">&para;</a></h2>
+<p>This time merging PR was really easy &amp; fun.</p>
+<p>Of course, difficulty of contributing OSS projects depends on project and functions. For example, frontend has a more strict guideline about automated testing and coding styles. So if are not front-end engineer, you should avoid contribute to this part (or maybe you should if you like to learn front-end part).</p>
+<p>So find issues or feature request from your favorite OSS, check the guideline and if you think you are confident you can contribute to the OSS. Just comment ot issue, implement it and make PR!</p>
                 
               
               
@@ -470,7 +677,7 @@
 
   <h2 id="__comments">Comments</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="https://xiong-jie-y.github.io/ai-yome/dataset/03_dataset_construction_by_reconstruction/",this.page.identifier="dataset/03_dataset_construction_by_reconstruction/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//ai-yome.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+  <script>var disqus_config=function(){this.page.url="https://xiong-jie-y.github.io/ai-yome/misc/01_contribution_to_cvat/",this.page.identifier="misc/01_contribution_to_cvat/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//ai-yome.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>
@@ -481,6 +688,41 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../dataset/02_instance_segmentation_annotation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How I annotated 300 images with instance segmentation mask" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              How I annotated 300 images with instance segmentation mask
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../02_nuclio_memo/" class="md-footer__link md-footer__link--next" aria-label="Next: Strange error while deploying serverless functions to nuclio so many times" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Strange error while deploying serverless functions to nuclio so many times
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
