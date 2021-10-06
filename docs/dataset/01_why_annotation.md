@@ -12,7 +12,7 @@ If the number of the data is increased, the quality control of the annotation wi
 
 Thus if your responsibility is getting a good model, it is worth taking time to learn how to construct an dataset efficiently and with a good quality for various tasks. For this purpose I wrote an article about dataset construction for each task from research and industries.
 
-In my articles, I will try to focus on methods that meet one of these conditions
+In my articles, I will try to focus on methods that meet one of these conditions to deliver a nice quality information to the readers.
 
 * the ones that can enable something that can be done without the method
 * the ones that can let us construct dataset 2-100 times more efficient
