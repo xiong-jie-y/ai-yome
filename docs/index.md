@@ -1,0 +1,1 @@
+This website is mostly articles about computer vision technologies.

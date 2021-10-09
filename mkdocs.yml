@@ -1,12 +1,16 @@
 site_name: Dreaming about ai waifu
 site_url: https://xiong-jie-y.github.io/ai-yome/
 nav:
-  - Projects:
+  - Home: index.md
+  - Articles:
       - 3D Reconstruction:
         - 3d_reconstruction/01_survey_3d_reconstruction.md
       - ML Dataset Construction:
         - dataset/01_why_annotation.md
         - dataset/02_instance_segmentation_annotation.md
+      - Erotech:
+        - erotech/01_erotic_computer_vision.md
+        - erotech/02_shape_and_pose_estimation.md
   - Blog:
     - 2021Q4:
       - misc/01_contribution_to_cvat.md
