@@ -863,11 +863,36 @@ There are also more detailed classes for human voices, but I guess it cannot dis
 </ul>
 <p>I feel recognition accuracy is so-so. 
 Also the table below is the computational costs of this model of onnx and original model.</p>
-<p>| Runtime      | Mean [ms]                          | Std [ms]                          | Video Memory [MiB] |
-| ----------- | ------------------------------------ |
-| tensorflow-gpu       | 4.879195771055545  | 0.47763425563967565 | 6013MiB |
-| onnxruntime-gpu (CPUExecutionProvider)       | 1.2899305888854196 | 0.23154279587315799 |  0 |
-| onnxruntime-gpu (CUDAExecutionProvider)    | 14.181141914335141 | 2.326298014955945 | 1187 |</p>
+<table>
+<thead>
+<tr>
+<th>Runtime</th>
+<th>Mean [ms]</th>
+<th>Std [ms]</th>
+<th>Video Memory [MiB]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tensorflow-gpu</td>
+<td>4.879195771055545</td>
+<td>0.47763425563967565</td>
+<td>6013MiB</td>
+</tr>
+<tr>
+<td>onnxruntime-gpu (CPUExecutionProvider)</td>
+<td>1.2899305888854196</td>
+<td>0.23154279587315799</td>
+<td>0</td>
+</tr>
+<tr>
+<td>onnxruntime-gpu (CUDAExecutionProvider)</td>
+<td>14.181141914335141</td>
+<td>2.326298014955945</td>
+<td>1187</td>
+</tr>
+</tbody>
+</table>
 <p>It seems that the CUDAExecutionProvider of the onnxruntime-gpu is slower than the tensorflow-gpu.
 And the fastest one is CPU on onnxruntime. The onnx model is converted from the tflite version of this model. but I got a similar result when converting the model from saved_model.pb. Even when trying different ops versions (both 14 and 13).
 My expectation was both gpu is faster on onnx and cpu was not sure because tf2onnx optimizes the model when converting the model into onnx. So far CPU seems the best results.</p>
