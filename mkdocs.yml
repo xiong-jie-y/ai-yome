@@ -11,11 +11,15 @@ nav:
       - Erotech:
         - erotech/01_erotic_computer_vision.md
         - erotech/02_shape_and_pose_estimation.md
+        - erotech/03_dataset_construction.md
   - Blog:
     - 2021Q4:
       - misc/01_contribution_to_cvat.md
       - misc/02_nuclio_memo.md
       - misc/03_start_writing.md
+      - misc/04_check_oss_for_contribution.md
+      - misc/05_wake_word_detection.md
+      - misc/06_performance_check.md
   - Profile: 
       - my_profile.md
 theme:
@@ -63,5 +67,6 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tabbed
   - pymdownx.tilde
+  - tables
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
