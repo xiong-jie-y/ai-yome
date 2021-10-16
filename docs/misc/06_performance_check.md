@@ -15,9 +15,13 @@ I use sentence-transformers to extract sentence embedding in Japanese.
 
 The running speed of one of the model is this.
 
+https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
+
 | Runtime      | Mean [ms]                          | Std [ms]                          | Video Memory [MiB] |
 | ----------- | ------------------------------------ |----------------------------------- |----------------------------------- |
-| torch (GPU)       | 8.842836856842042  | 65.63512836911743 | 2845MiB |
+| torch (GPU)       | 8.107524796536094  | 47.09861339261219 | 2845MiB |
+| onnxruntime-gpu (CUDAExecutionProvider)       |  2.2299451577036002 | 0.1989985428356649 | 3599MiB |
+| onnxruntime-gpu (CPUExecutionProvider)       |  10.418843093671297 | 0.705815781617671 | 0MiB |
 
 There's a [result of measuring the performance](https://github.com/UKPLab/sentence-transformers/issues/631#issuecomment-755247968) of ONNX model from one of the model in sentence transformers.
 From this the performance result is 7x faster than the original model on GPU.
