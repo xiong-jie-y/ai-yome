@@ -720,6 +720,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_onnx_conversion/" class="md-nav__link">
+        The strategies to convert complex pytorch model into ONNX
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -918,6 +932,13 @@ Just follow <a href="https://tech.retrieva.jp/entry/2020/12/23/170645">this arti
 <p>Even though it's not super power efficient and computational efficiently that can be used in embedding systems.
 But the combination of the human voice detection and speech to text approach works better than wake word detection,
 without training data for wake word. This is really useful for prototyping or not computational scarce environment.</p>
+<p><code>ortvalue = onnxruntime.OrtValue.ortvalue_from_numpy(input, 'cuda', 0)
+        ort_hidden = onnxruntime.OrtValue.ortvalue_from_numpy(hidden, 'cuda', 0)
+        io_binding = self.session.io_binding()
+        io_binding.bind_input(name='input', device_type=ortvalue.device_name(), device_id=0, element_type=np.float32, shape=ortvalue.shape(), buffer_ptr=ortvalue.data_ptr())
+        io_binding.bind_input(name='ort_hidden', device_type=ort_hidden.device_name(), device_id=0, element_type=np.float32, shape=ort_hidden.shape(), buffer_ptr=ort_hidden.data_ptr())
+        io_binding.bind_output('output')
+        self.session.run_with_iobinding(io_binding)</code></p>
                 
               
               

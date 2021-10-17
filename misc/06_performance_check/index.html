@@ -716,6 +716,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_onnx_conversion/" class="md-nav__link">
+        The strategies to convert complex pytorch model into ONNX
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -863,6 +877,7 @@
 <h2 id="sentencetransformer">SentenceTransformer<a class="headerlink" href="#sentencetransformer" title="Permanent link">&para;</a></h2>
 <p>I use sentence-transformers to extract sentence embedding in Japanese.</p>
 <p>The running speed of one of the model is this.</p>
+<p><a href="https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2">https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2</a></p>
 <table>
 <thead>
 <tr>
@@ -875,9 +890,21 @@
 <tbody>
 <tr>
 <td>torch (GPU)</td>
-<td>8.842836856842042</td>
-<td>65.63512836911743</td>
+<td>8.107524796536094</td>
+<td>47.09861339261219</td>
 <td>2845MiB</td>
+</tr>
+<tr>
+<td>onnxruntime-gpu (CUDAExecutionProvider)</td>
+<td>2.2299451577036002</td>
+<td>0.1989985428356649</td>
+<td>3599MiB</td>
+</tr>
+<tr>
+<td>onnxruntime-gpu (CPUExecutionProvider)</td>
+<td>10.418843093671297</td>
+<td>0.705815781617671</td>
+<td>0MiB</td>
 </tr>
 </tbody>
 </table>
@@ -938,13 +965,13 @@ TO run on sentence transformer and ESPNet on mobile device, utilizing cloud reso
       
       
         
-        <a href="../../my_profile/" class="md-footer__link md-footer__link--next" aria-label="Next: Profile" rel="next">
+        <a href="../07_onnx_conversion/" class="md-footer__link md-footer__link--next" aria-label="Next: The strategies to convert complex pytorch model into ONNX" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Profile
+              The strategies to convert complex pytorch model into ONNX
             </div>
           </div>
           <div class="md-footer__button md-icon">
